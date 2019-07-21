@@ -36,3 +36,22 @@ def randomStr(randomlength=8):
     for i in range(randomlength):
         str += chars[random.randint(0, length)]
     return str
+
+
+def atoi(str):
+    try:
+        r = int(str)
+        return r
+    except Exception, e:
+        return 0
+
+
+def checkdate(m, d, y):
+    import datetime
+
+    try:
+        m, d, y = map(int, (m, d, y))
+        datetime.date(y, m, d)
+        return True
+    except ValueError:
+        return False
