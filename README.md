@@ -2,6 +2,7 @@
 
 python 测试代码
 
+add test
 
 # 虚拟机
 virtualenv --no-site-packages venv
